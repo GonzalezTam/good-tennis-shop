@@ -4,19 +4,20 @@
 }
 
 header{
-    position: fixed;
     top: 0;
-    min-height: 75px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 30px;
     width: 100vw;
-    margin: 0;
     background-color: white;
-    box-shadow: 0 2px 4px 3px rgba(0,0,0,.2);
-    z-index: 1;
+    box-shadow: 0 1px 6px 1px rgba(0,0,0,.2);
     max-width: 100%;
+}
+
+.logo-header{
+    justify-content: center;
+    display: flex;
+}
+
+.logo-header > img, h6{
+    margin: auto;
 }
 
 li{
@@ -32,19 +33,36 @@ nav a{
 
 nav a,a:visited{
     padding: 1rem;
-    color: #da2727;
     text-decoration: none;
 }
 
-nav > ul {
+.pri-caja li > a{
+    color: #FF3847;
+}
+
+nav > ul > .pri-caja, .seg-caja {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 0;
+}
+
+nav > ul {
+    padding-left: 0;
+    display: flex;
+    background-color: rgb(66, 66, 66);
+    justify-content: space-evenly;
+    height: 45px;
 }
 
 nav a:hover{
-    color: #a01c1c;
+    color: #ffffff;
+}
+
+.pri-caja, .seg-caja{
+    margin: auto;
+}
+
+.cart-icon{
+    text-align: end;
+    color: #88C23F;
 }
 
 .logo > img {
@@ -58,16 +76,16 @@ nav a:hover{
     margin-left: 20px;
 }
 
+img, svg {
+    vertical-align: text-bottom;
+}
+
 @media (max-width: 750px) {
     header {
     flex-wrap: wrap;
     position: relative;
-    top: 0;
-    min-height: 75px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 5px 30px;
     width: 100vw;
     background-color: white;
     }
@@ -80,36 +98,33 @@ nav a:hover{
         margin-right: 0;
         margin-left: 0;
     }
-    
+
     .logo > img {
     margin: 0 auto;
     }
 
     nav {
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
         padding: 0px;
-        margin-top: -13px;
-    }
-
-    nav li {
-        padding-bottom: 3px;
     }
 
     nav a {
         font-weight: 600;
         font-size: 100%;
+        padding: 0.45rem;
     }
 
     .nav-link{
-        padding: 2px; 
+        padding: 2px;
     }
 
     nav ul{
-        flex-direction: column;
+        flex-direction: row;
         padding-left: 0;
+        margin: 0 auto;
+        justify-content: space-evenly;
     }
 }

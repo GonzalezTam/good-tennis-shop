@@ -1,10 +1,19 @@
+import CartWidget from "./CartWidget";
+
+
 const NavBar = () => {
     return (
-        <nav className="">
+        <nav className="nav-header">
             <ul>
-                <li><a className="" href="#suscribe">Catalogue</a></li>
-                <li><a className="" href="#about">About</a></li>
-                <li><a className="" href="#footer">Contact</a></li>
+                <div className="pri-caja">
+                <li><a href="#Racquets">Racquets</a></li>
+                <li><a href="#Shoes">Shoes</a></li>
+                <li><a href="#Strings">Strings</a></li>
+                <li><a href="#Balls">Balls</a></li>
+                </div>
+                <div className="seg-caja">
+                <CartWidget/>
+                </div>
             </ul>
         </nav>
     );
