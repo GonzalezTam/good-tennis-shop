@@ -1,15 +1,21 @@
 import Header from "./components/Header/Header";
+import NavBar from "./components/Header/NavBar";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import "./index.css"
+import Container from "react-bootstrap/Container";
+import ItemListContainer from "./components/ItemListContainer";
 
 
 const App = () => {
     return (
         <>
             <Header/>
-            <Main/>
-            <Footer/>
+            <NavBar/>
+            <Container>
+                <ItemListContainer string1="Catalogo en proceso" string2="vuelva prontos.."/>
+                <Main/>
+                <Footer/>
+            </Container>
         </>
     );
 }
