@@ -1,8 +1,4 @@
 /*************** HEADER ***************/
-#wrapper {
-    position: relative;
-}
-
 header{
     top: 0;
     width: 100vw;
@@ -18,51 +14,6 @@ header{
 
 .logo-header > img, h6{
     margin: auto;
-}
-
-li{
-    display: list-item;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav a{
-    font-weight: 600;
-}
-
-nav a,a:visited{
-    padding: 1rem;
-    text-decoration: none;
-}
-
-.pri-caja li > a{
-    color: #FF3847;
-}
-
-nav > ul > .pri-caja, .seg-caja {
-    display: flex;
-}
-
-nav > ul {
-    padding-left: 0;
-    display: flex;
-    background-color: rgb(66, 66, 66);
-    justify-content: space-evenly;
-    height: 45px;
-}
-
-nav a:hover{
-    color: #ffffff;
-}
-
-.pri-caja, .seg-caja{
-    margin: auto;
-}
-
-.cart-icon{
-    text-align: end;
-    color: #88C23F;
 }
 
 .logo > img {
@@ -101,30 +52,5 @@ img, svg {
 
     .logo > img {
     margin: 0 auto;
-    }
-
-    nav {
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-        padding: 0px;
-    }
-
-    nav a {
-        font-weight: 600;
-        font-size: 100%;
-        padding: 0.45rem;
-    }
-
-    .nav-link{
-        padding: 2px;
-    }
-
-    nav ul{
-        flex-direction: row;
-        padding-left: 0;
-        margin: 0 auto;
-        justify-content: space-evenly;
     }
 }
