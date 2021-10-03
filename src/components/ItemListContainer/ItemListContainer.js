@@ -1,11 +1,6 @@
-import ItemCount from "../ItemCount/ItemCount";
-import ItemList from '../ItemList/ItemList'
+// import ItemCount from "../ItemCount/ItemCount";
+import ItemList from "../ItemList/ItemList";
 
-
-const ItemListContainer = (props) => {
-    return (
-        <ItemCount stock="5" initial="1" />
-    )
-}
+const ItemListContainer = (props) => <ItemList items={props.items}/>
 
 export default ItemListContainer;
