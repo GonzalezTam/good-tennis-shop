@@ -12,7 +12,7 @@ const App = () => {
             <Header/>
             <NavBar/>
             <Container>
-                <ItemListContainer string1="Catalogo en proceso" string2="vuelva prontos.."/>
+                <ItemListContainer/>
                 <Main/>
                 <Footer/>
             </Container>

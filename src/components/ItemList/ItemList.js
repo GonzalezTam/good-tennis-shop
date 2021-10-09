@@ -66,26 +66,24 @@ const ItemList = () => {
 
 
     useEffect(() => {
-        let requestData = createPromise();
-        requestData
-        .then( function(items_promise){
-            setItems(items_promise);
-            setState('Done!');
-            console.log(items_promise);
-        })
-        .catch( function(err){
-            console.log(err);
-            setState('Error');
-        })
-        .finally( ()=>{
-                console.log('Promise ended.');
-            }
-        )
+        createPromise()
+            .then( function(items_promise){
+                setItems(items_promise);
+                setState('Done!');
+                console.log(items_promise);
+            })
+            .catch( function(err){
+                console.log(err);
+                setState('Error');
+            })
+            .finally( ()=>{
+                    console.log('Promise ended.');
+                }
+            )
     }, []);
 
     return (
-        <section className="">
-            <div className="">
+            <div className="container row justify-content-center">
                 {console.log(state)}
                 {(items !== null) && items.map((itm,index) =>
                         <Item
@@ -98,7 +96,6 @@ const ItemList = () => {
                         />
                 )}
             </div>
-        </section>
     )
 }
 

@@ -1,23 +1,22 @@
 import React from 'react';
 import ItemCount from "../ItemCount/ItemCount";
+import './item.css'
 
 const Item = (props) => {
     return (
-        <div className="">
-            <div className="">
-                <img className=""
-                    src={props.imgUrl}
-                    alt={props.title}
-                />
-                <h3 className="">
-                    {props.title}
-                </h3>
-                <h2 className="">
-                    ${props.price}
-                </h2>
-                <ItemCount stock={props.stock} initial="1" />
+            <div className="col-3 shadow-sm p-3 mb-5 bg-body rounded item-container">
+                <div className="justify-content-center">
+                    <img className="img-fluid"
+                        src={props.imgUrl}
+                        alt={props.title}
+                    />
+                    <h6 className="">{props.title}</h6>
+                    <p className="">${props.price}</p>
+                </div>
+                <div className="d-flex justify-content-center">
+                    <ItemCount stock={props.stock} initial="1" />
+                </div>
             </div>
-         </div>
     );
 }
 

@@ -30,7 +30,7 @@ const ItemCount = ({ initial, stock }) => {
     }, [stock, initial]);
 
     return (
-            <Col className = 'col-2'>
+            <Col className = 'col-6'>
                 <Row className='text-center'>
                     <Col className='btn btn-light' id='minusBtn' onClick={substractCounter}>
                         <BiMinus/>
@@ -44,7 +44,7 @@ const ItemCount = ({ initial, stock }) => {
                 </Row>
                 <Row>
                     <Button variant='outline-dark btn-block mt-1 mb-4' onClick={addToCart}>
-                        Add To Cart <FaCartPlus/>
+                        Add To <FaCartPlus/>
                     </Button>
                 </Row>
             </Col>
