@@ -1,3 +1,16 @@
 .item-container{
     margin: 20px;
 }
+
+a, a:hover, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.animate {
+    transition: transform 250ms;
+}
+
+.animate:hover {
+    transform: translateY(-5px);
+}

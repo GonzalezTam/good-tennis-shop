@@ -1,13 +1,20 @@
 import "./Header.css";
+import {Row, Col} from 'react-bootstrap';
+import Logo from "../Logo/Logo";
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
     return (
         <header>
-            <div className="logo-header">
-                <img alt="logo" src="goodTennisShop.png"/>
-                <h6>Free shipping & returns over $50</h6>
-            </div>
+            <Row className="justify-content-center">
+                <Col className="d-flex justify-content-center">
+                    <Link to={"/"}><Logo /></Link>
+                </Col>
+                <Col className="d-flex justify-content-center m-auto">
+                    <h6>Free shipping & returns over $50</h6>
+                </Col>
+            </Row>
         </header>
     );
 }
