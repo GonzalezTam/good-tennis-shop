@@ -5,15 +5,17 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=BGCBC-1.jpg&nw=540",
 		"id": 1,
 		"stock": 6,
-		"category": "Balls"
+		"category": "balls",
+		"description": "Babolat's Gold Championship ball combines excellent feel and durability. This is a great ball for players looking for consistent performance throughout their toughest matches."
 	},
 	{
-		"title": "Wilson US Open High Altitude Tennis Balls 24 Can Case",
+		"title": "Wilson US Open XD Tennis Ball 3-Ball 24 Can Case",
 		"price": 99.9,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=USHA-1.jpg&nw=540",
+		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=USOC-1.jpg&nw=540",
 		"id": 2,
 		"stock": 4,
-		"category": "Balls"
+		"category": "balls",
+		"description": "For the past 40+ years, every point at the US Open has been played with a Wilson US Open tennis ball. Crafted with a premium woven felt, the Wilson US Open Extra Duty ball is ideal for play on hard, abrasive courts thanks to its excellent durability."
 	},
 	{
 		"title": "Wilson Triniti All Court Tennis Ball 24 Can Case",
@@ -21,7 +23,8 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=WTRINBC-1.jpg&nw=540",
 		"id": 3,
 		"stock": 5,
-		"category": "Balls"
+		"category": "balls",
+		"description": "Wilson brings something new to the ball market with Triniti, the first performance tennis ball designed with fully sustainable packaging. While there will not be the familiar 'pop' sound as a traditional ball can, the unique octagonal container, called a sleeve, is 100% recyclable after use. The ball features an Engage Core which integrates plastomer material to maintain a fresher feel four times longer than a standard core. STR felt is 50% more flexible than standard felt for better feel and durability. A better ball for the planet."
 	},
 	{
 		"title": "Dunlop Australian Open XD Tennis Ball 24 Can Case",
@@ -29,7 +32,8 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=DPAOBALLC-1.jpg&nw=540",
 		"id": 4,
 		"stock": 9,
-		"category": "Balls"
+		"category": "balls",
+		"description": "The first Slam of the year, the 2019 Australian Open, opens with Dunlop as its new ball sponsor! This new tennis ball features an HD Core, which is a remastered version of the classic Dunlop Forte Core that is designed to play even more consistently and with greater durability. Dunlop has also added HD Pro Cloth to this ball, a premium felt engineered for the highest level of play. Players of all levels looking for the highest quality ball will be satisfied with this new offering from Dunlop. "
 	},
 	{
 		"title": "Penn Tour Extra Duty Tennis Balls 24 Can Case",
@@ -37,7 +41,8 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=TOUXDC-1.jpg&nw=540",
 		"id": 5,
 		"stock": 0,
-		"category": "Balls"
+		"category": "balls",
+		"description": "Penn Tour tennis balls are a premium tennis ball used in 4 of the 5 largest tournaments in North America. The Tour balls feature LongPlay felt for great durability and Smart Optik felt treatment for high visibility on court. Smart Optik felt is 19% more visible than a standard tennis ball. Approved for ITF and USTA tournaments. Perfect for hard court surfaces."
 	},
 	{
 		"title": "Pro Penn Marathon Regular Duty Tennis Balls 24 Can Case",
@@ -45,15 +50,17 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=PPMRD-1.jpg&nw=540",
 		"id": 6,
 		"stock": 5,
-		"category": "Balls"
+		"category": "balls",
+		"description": "Penn's longest lasting tennis ball, the Pro Penn Marathon is the #1 choice among USPTA Teaching Professionals. These feature Penn's Encore technology for more longevity in the core and LongPlay felt for better durability. Optik felt keeps visibility at a maximum. These particular Pro Penn Marathon balls are made of regular duty felt, ideal for soft courts such as: clay, grass, omni and carpet etc."
 	},
 	{
-		"title": "Asics Gel Resolution 8 White/Black Men's Shoes",
-		"price": 134.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=AMGR8WH-1.jpg&nw=540",
+		"title": "Asics Gel Challenger 13 White/Black Men's Shoes",
+		"price": 94.95,
+		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=AMCH3WB-1.jpg&nw=540",
 		"id": 7,
 		"stock": 3,
-		"category": "Shoes"
+		"category": "shoes",
+		"description": "Asics takes some of the support, and stability features of the its iconic Gel Resolution, and creates a more flexible, comfortable, and budget-friendly option, with the Gel Challenger 13. New to this update, Wingwall technology has been placed on the lateral edge of the midsole, and maximizes the stability during those aggressive changes of direction. Signature GEL Cushioning remains intact allowing for excellent shock absorption. The durable AHARPLUS rubber outsole is formed into a modified herringbone pattern, for maximum traction and durability on a variety of court surfaces."
 	},
 	{
 		"title": "Asics Gel Resolution 8 Black/Gecko Green Men's Shoes",
@@ -61,15 +68,17 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=AMGR8BG-1.jpg&nw=540",
 		"id": 8,
 		"stock": 6,
-		"category": "Shoes"
+		"category": "shoes",
+		"description": "The Asics Gel Resolution 8 is loaded with support, stability and comfort, plus they happen to be some of the most durable shoes on the market. Designed with the help of WTA & ATP pros, like Gael Monfils, these shoes are great for any level player and they continue to evolve for the modern game and now are more flexible to move with your feet on those aggressive court cuts. Layers of cushioning underfoot help reduce harsh court shock while adding energy into each step."
 	},
 	{
-		"title": "Asics Gel Resolution 8 Clay Red/White Men's Shoes",
-		"price": 109.99,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=AMGR8WR-1.jpg&nw=540",
+		"title": "Asics Solution Speed FF 2 White/Classic Red Men's Shoes",
+		"price": 124.95,
+		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=AMSSFWC-2.jpg&nw=540",
 		"id": 9,
 		"stock": 2,
-		"category": "Shoes"
+		"category": "shoes",
+		"description": "There are a plethora of lightweight, speed-oriented performance shoes on the market, but not many can do what the Solution Speed FF 2 does! It remains light while still maintaining a high level of support, plus cushioning for the most aggressive movers. TheFlyteFoam midsole provides a smooth, plush ride while the Twisstruss system helps with stability for ultra-aggressive lateral cuts. One key improvement our testers found was the Flexion Fit upper material which contours to the foot better than before making movement seamless. Durability has been improved with added protection to the medial side for hard court sliders. The outsole provides a nice blend of grip, while not feeling overly sticky, catering to speedy players, like Alex de Minaur, who slide into their shots on gritty hard courts."
 	},
 	{
 		"title": "Nike Air Zoom Vapor Pro Dark Teal/Green Men's Shoe",
@@ -77,7 +86,8 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=NMVPTG-1.jpg&nw=540",
 		"id": 10,
 		"stock": 4,
-		"category": "Shoes"
+		"category": "shoes",
+		"description": "Players in search of premium lightweight performance can find it here, with the Air Zoom Vapor Pro! Worn on the pro tour by the likes of Nick Kyrgios, and Andrey Rublev. Nike has taken the best features of the shoe it replaces (the Vapor X) and adds in some new technology for the speediest Vapor yet! The upper has been redesigned and offers dual layers of support with a sock-like inner sleeve and a layer of durable mesh to assist in support and breathability. The asymmetrical lacing system has been strategically added for even more support when moving laterally. Players who have worn the Vapor X will recognize the midsole and outsole as a Zoom Air unit in the heel offers responsive cushioning underfoot while the generative outsole pattern enhances explosive directional changes. While not the most durable shoe in Nike's lineup, the outsole has been engineered with added tread in high-wear zones, and suits well for those players who slide into their shots!"
 	},
 	{
 		"title": "Nike Air Zoom Vapor Pro White/Black Men's Shoe",
@@ -85,7 +95,8 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=NMVPWB-1.jpg&nw=540",
 		"id": 11,
 		"stock": 1,
-		"category": "Shoes"
+		"category": "shoes",
+		"description": "Players in search of premium lightweight performance can find it here, with the Air Zoom Vapor Pro! Worn on the pro tour by the likes of Nick Kyrgios, and Andrey Rublev. Nike has taken the best features of the shoe it replaces (the Vapor X) and adds in some new technology for the speediest Vapor yet! The upper has been redesigned and offers dual layers of support with a sock-like inner sleeve and a layer of durable mesh to assist in support and breathability. The asymmetrical lacing system has been strategically added for even more support when moving laterally. Players who have worn the Vapor X will recognize the midsole and outsole as a Zoom Air unit in the heel offers responsive cushioning underfoot while the generative outsole pattern enhances explosive directional changes. While not the most durable shoe in Nike's lineup, the outsole has been engineered with added tread in high-wear zones, and suits well for those players who slide into their shots!"
 	},
 	{
 		"title": "Babolat Jet Mach II Clay White/Navy/Orange Men's Shoes",
@@ -93,15 +104,17 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=BMJM2CW-1.jpg&nw=540",
 		"id": 12,
 		"stock": 3,
-		"category": "Shoes"
+		"category": "shoes",
+		"description": ""
 	},
 	{
-		"title": "Babolat Jet Mach III AC White Men's Shoes",
+		"title": "Babolat Jet Mach III AC Green/Purple Men's Shoes",
 		"price": 130,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=BMJM3WH-1.jpg&nw=540",
+		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=BMJM3GP-1.jpg&nw=540",
 		"id": 13,
 		"stock": 1,
-		"category": "Shoes"
+		"category": "shoes",
+		"description": "The Babolat Jet Mach III takes speed and agility to new heights. The upper comfortably supports your feet and has been designed to be more flexible, while maintaining the strength for aggressive court movements. Taking inspiration from their more stable shoe, the Propulse, the speedier Jet has a redesigned midsole with more cushioning and support compared to previous versions, which is noticeable from the first wear. Signature Michelin rubber is used to construct the outsole, maximizing durability of this lightweight shoe, and will have you ready for each start and stop!"
 	},
 	{
 		"title": "Lacoste AG-LT 21 White/Green Men's Shoes",
@@ -109,15 +122,17 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=LMAGWHG-1.jpg&nw=540",
 		"id": 14,
 		"stock": 7,
-		"category": "Shoes"
+		"category": "shoes",
+		"description": "If you are a fan of the Lacoste style, and like a more flexible feeling shoe, with out of the box comfort, the Lacoste AG-LT 21 is the way to go! This version is a slightly more minimal version of the AG-LT 21 Ultra, and is a great choice for the club player looking for comfortable support.  The mesh panels on the upper will allow for plenty of breathability, while the cushioned ankle collar adds a comfortable and secure fit. Lateral stability is enhanced by the Pebax bridge located in the mid-foot region, and the outsole is equipped with Goodyear rubber in a modified herringbone for traction on a variety of surfaces."
 	},
 	{
-		"title": "Lacoste AG-LT 21 Black/Dk. Green Men's Shoes",
-		"price": 119.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=LMAGBDG-1.jpg&nw=540",
+		"title": "Lacoste AG-LT 21 Ultra Black/Yellow Men's Shoes",
+		"price": 174.95,
+		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=LMAGLBY-1.jpg&nw=540",
 		"id": 15,
 		"stock": 0,
-		"category": "Shoes"
+		"category": "shoes",
+		"description": "Built for player’s who rely on speed, the Lacoste AG-LT 21 Ultra is sure to keep you feeling agile around the court, supported, and well ventilated. The helix-woven mesh uppers provide a nice contoured fit, while providing plenty of breathability, and the Kurim overlay around the toes provides durable drag protection. Lateral stability is enhanced by the Pebax bridge located in the mid-foot region, and also functions as an energy plate, to help surge you forward when chasing down the next ball. The outsole is designed for aggressive movements, and durable enough to withstand the grind of players like Daniil Medvedev. Featuring Goodyear rubber tread pods, you’ll be sure to have the grip, so that your wheels don’t slip!"
 	},
 	{
 		"title": "Luxilon ALU Power 16/1.30 String Reel",
@@ -125,7 +140,8 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=LUXAL16SR-1.jpg&nw=540",
 		"id": 16,
 		"stock": 4,
-		"category": "Strings"
+		"category": "strings",
+		"description": "Luxilon releases a 16 gauge version ALU Power, one of the most popular tennis strings ever made. Offering a tad more control and durability than  ALU Power 16L, this string will let you swing even bigger when adding spin and pace to your shots (think heavy ball). In addition to being a great option for intermediate and advanced players, this is a must hit for fans of the original ALU Power 16L. "
 	},
 	{
 		"title": "Babolat RPM Blast 16/1.30 String Reel",
@@ -133,7 +149,8 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=BRPMB16R-1.jpg&nw=540",
 		"id": 17,
 		"stock": 2,
-		"category": "Strings"
+		"category": "strings",
+		"description": "The string of choice for Stan Wawrinka, this durable co-poly string is very, very spin friendly. The slick surface of RPM Blast allows the main strings to slide out of alignment, grab the ball and then snap back to add spin to the shot. While all co-poly monofilaments do this to some extent, our lab tests confirm that RPM Blast is exceptional in this regard. Though RPM Blast offers a slightly softer feel than traditional polyesters, it is by no means the softest co-poly available. It is an ideal choice for big hitters with heavier racquets seeking maximum control, durability, and spin. (And it seems to be working quite well for Rafa!)"
 	},
 	{
 		"title": "Babolat Xcel 16/1.30 String Reel Blue",
@@ -141,7 +158,8 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=BXCS16BR-1.jpg&nw=540",
 		"id": 18,
 		"stock": 5,
-		"category": "Strings"
+		"category": "strings",
+		"description": "This soft and natural gut-like feeling string is a premium multifilament. Using polymid binds in lieu of polyurethane, Babolat was able to increase the durability and tension maintenance for extended life and playability. A great performance string as well as being arm friendly. While this one has more than enough pop for players with shorter strokes, the control is actually quite good for the breed."
 	},
 	{
 		"title": "Solinco Hyper-G 16/1.30 String Reel",
@@ -149,7 +167,8 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=SHG16R-1.jpg&nw=540",
 		"id": 19,
 		"stock": 6,
-		"category": "Strings"
+		"category": "strings",
+		"description": "Solinco Hyper-G is a square shaped co-poly with an impressive combination of spin and precision. Developed for an ATP top 50 player, this medium firm string will allow big hitters to take massive cuts at the ball without having to worry about overhitting. Topspin players who like hitting balls that dive sharply and explode off the court should love this string."
 	},
 	{
 		"title": "Solinco Tour Bite 16/1.30 String Reel",
@@ -157,7 +176,8 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=STB16R-1.jpg&nw=540",
 		"id": 20,
 		"stock": 2,
-		"category": "Strings"
+		"category": "strings",
+		"description": "Solinco Tour Bite is a polyester monofilament that provides excellent control and remarkable spin. This explains why it is extremely popular at the collegiate level. Our testers noticed immediately how well the square profile gripped the ball. This is not only a perfect string for players seeking more control and spin, but it also packs a punch for those who favor a heavy ball."
 	},
 	{
 		"title": "Solinco Outlast 16/1.30 String Reel",
@@ -165,7 +185,8 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=SOUT16R-1.jpg&nw=540",
 		"id": 21,
 		"stock": 1,
-		"category": "Strings"
+		"category": "strings",
+		"description": "The Solinco Outlast is a co-polyester string that offers a softer stringbed than traditional polyesters. We found the string to provide great bite on the ball, imparting tons of spin on our shots. Great on its own or as part of a hybrid, this string is perfect for the big all court player."
 	},
 	{
 		"title": "Kirschbaum Pro Line II 16/1.30 String Reel",
@@ -173,7 +194,8 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=PL2130RBK-1.jpg&nw=540",
 		"id": 22,
 		"stock": 6,
-		"category": "Strings"
+		"category": "strings",
+		"description": "This is one of the softest and most responsive co-polyester strings offered by Kirschbaum. Compared to a traditional polyester string, Pro Line II offers better pocketing along with a more forgiving feel on off-center impact. This string has great durability and comes pre-stretched for better tension maintenance. This string's precise and predictable response will enable you to swing bigger when going for pace and spin. Ideal for intermediate and advanced players with long, fast strokes."
 	},
 	{
 		"title": "Kirschbaum Pro Line II Rough 16/1.30 String Reel",
@@ -181,7 +203,8 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=PL2R130RBK-1.jpg&nw=540",
 		"id": 23,
 		"stock": 8,
-		"category": "Strings"
+		"category": "strings",
+		"description": "With Pro Line II Rough Kirschbaum adds some texture to the surface of one of their most popular co- polys. Like the standard Pro Line II, this string's low-powered response allows big hitters to take huge cuts at the ball without fear of overhitting. This not only enables the player to swing faster in the service of pace and spin, but it also makes it easier to close out points with ambitious shots. Although this is a firm string, our playtesters loved the feel and reported zero problems with discomfort. Big swinging intermediate and advanced players looking for control and durability should give this string a serious look."
 	},
 	{
 		"title": "Kirschbaum Spiky Black Shark 16/1.30 String Reel",
@@ -189,6 +212,7 @@
 		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=SHARK16RB-1.jpg&nw=540",
 		"id": 24,
 		"stock": 3,
-		"category": "Strings"
+		"category": "strings",
+		"description": "Armed with eight sharp edges, this shark has some serious bite (think easy spin) The crisp and very predictable response will give big hitters exceptional control on their biggest swings. Players who like hitting heavy topspin, penetrating slices and big kickers need look no further. Spiky Black Shark offers excellent ball pocketing with a comfortably firm feel. "
 	}
 ]

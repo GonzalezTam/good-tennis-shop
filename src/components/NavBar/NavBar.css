@@ -31,7 +31,7 @@ nav > ul {
 }
 
 nav a:hover{
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .nav-box-1, .nav-box-2{
@@ -41,7 +41,7 @@ nav a:hover{
 
 .cart-icon{
     text-align: end;
-    color: #88C23F;
+    color: #88C23F !important;
 }
 
 @media (max-width: 750px) {

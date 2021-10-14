@@ -1,10 +1,12 @@
 import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar/NavBar";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+// import Main from "./components/Main";
+import Footer from "./components/Footer/Footer";
 import { Container } from 'react-bootstrap';
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-// import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import Category from './views/Category/Category';
+import Detail from './views/Detail/Detail';
+import Cart from './views/Cart/Cart';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 
@@ -15,16 +17,13 @@ const App = () => {
             <NavBar/>
             <Container>
                 <Switch>
-                    <Route path="/" component={ItemListContainer}/>
-                    <Route path="/category/:id" component={ItemListContainer}/>
-                    {/* <Route path="/item/:id" component={ItemDetailContainer}/> */}
-                    {/* <Route path="/categories/racquets" component={ItemListContainer}/>
-                    <Route path="/categories/shoes" component={ItemListContainer}/>
-                    <Route path="/categories/strings" component={ItemListContainer}/>
-                    <Route path="/categories/balls" component={ItemListContainer}/> */}
+                    <Route exact path="/" component={ItemListContainer}/>
+                    <Route exact path="/category/:categoryId" component={Category}/>
+                    <Route exact path="/item/:id" component={Detail}/>
+                    <Route exact path="/" component={Cart}/>
                 </Switch>
             </Container>
-            <Main/>
+            {/* <Main/> */}
             <Footer/>
         </BrowserRouter>
     );

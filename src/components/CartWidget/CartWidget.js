@@ -1,4 +1,5 @@
 import { CgShoppingCart } from 'react-icons/cg';
+import '../NavBar/NavBar.css'
 
 const CartWidget = () => {
     return (

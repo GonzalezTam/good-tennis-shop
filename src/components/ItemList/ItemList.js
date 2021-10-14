@@ -5,9 +5,10 @@ import { Row } from "react-bootstrap";
 const ItemList = ({ items }) => {
     return (
             <Row xs={1} md={3} lg={4} className="justify-content-center">
-                {(items !== null) && items.map((itm,index) =>
+                {(items !== null && items.length > 0) && items.map((itm,index) =>
                         <Item
-                        key={index}
+                            key={index}
+                            id={itm.id}
                             title={itm.title}
                             price={itm.price}
                             imgUrl={itm.thumbnail}
