@@ -1,9 +1,10 @@
 import { CgShoppingCart } from 'react-icons/cg';
-import '../NavBar/NavBar.css'
+import { Link } from 'react-router-dom';
+import '../NavBar/NavBar.css';
 
 const CartWidget = () => {
     return (
-        <li><a className="cart-icon" href="#cart">Buy <CgShoppingCart/></a></li>
+        <li><Link to="/" className="cart-icon">Buy <CgShoppingCart/></Link></li>
     );
 }
 

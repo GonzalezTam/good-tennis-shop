@@ -15,6 +15,7 @@ const App = () => {
         <BrowserRouter>
             <Header/>
             <NavBar/>
+            {/* <Main/> */}
             <Container>
                 <Switch>
                     <Route exact path="/" component={ItemListContainer}/>
@@ -23,7 +24,6 @@ const App = () => {
                     <Route exact path="/" component={Cart}/>
                 </Switch>
             </Container>
-            {/* <Main/> */}
             <Footer/>
         </BrowserRouter>
     );

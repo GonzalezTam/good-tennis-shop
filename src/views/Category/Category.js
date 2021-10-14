@@ -2,7 +2,6 @@ import React from 'react'
 import ItemListContainer from '../../components/ItemListContainer/ItemListContainer'
 import { useParams } from 'react-router'
 
-
 function Category() {
     const {categoryId} = useParams()
     console.log(categoryId)
@@ -16,7 +15,7 @@ function Category() {
 
     return (
         <div className="wrapper">
-            <h2 className="headline-1">{categoryUpper}</h2>
+            <h2 className="text-center">{categoryUpper}</h2>
             <br/>
             <ItemListContainer />
         </div>
