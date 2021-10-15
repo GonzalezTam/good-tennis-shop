@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <header>
-            <Row className="justify-content-center">
+            <Row className="justify-content-center gx-0">
                 <Col className="d-flex justify-content-center">
                     <Link to={"/"}><Logo /></Link>
                 </Col>
