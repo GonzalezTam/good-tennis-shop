@@ -4,7 +4,7 @@ import { FaCartPlus } from 'react-icons/fa';
 import { BiMinus, BiPlus } from 'react-icons/bi';
 import './itemCount.css'
 
-const ItemCount = ({ initial, stock }) => {
+    const ItemCount = ({ initial, stock }) => {
     const [counter, setCounter] = useState(Number(initial));
 
 
@@ -39,7 +39,7 @@ const ItemCount = ({ initial, stock }) => {
                         {counter}
                     </Col>
                     <Col className='btn btn-light' id='plusBtn' onClick={addToCounter}>
-                    <BiPlus/>
+                        <BiPlus/>
                     </Col>
                 </Row>
                 <Row>

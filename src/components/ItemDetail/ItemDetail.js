@@ -15,7 +15,7 @@ const ItemDetail = ({image, title, price, description, stock, brand}) => {
                 <h2 className="item-detail-title">{title}</h2>
                 <p className="item-detail-price">${price}</p>
                 <br />
-                <Link to={'/cart'}>
+                <Link to={'#'}>
                     <Row className="justify-content-center">
                         <ItemCount stock={stock} initial="1"/>
                     </Row>
