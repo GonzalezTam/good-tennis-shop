@@ -6,16 +6,22 @@ import Loader from '../Loader/Loader';
 const ItemListContainer = () => {
     const [items,setItems] = useState([]);
     const [isLoading, setIsLoading] = useState(false)
-    const { categoryId } = useParams()
+    const { category } = useParams()
+
+    const getProducts = () =>{
+        return new Promise ((resolve,reject) => {
+            setTimeout(()=> {resolve (fetch('../data.json'))},500)
+        })
+    }
 
     useEffect(() => {
         setIsLoading(true)
-        fetch('../data.json')
+        getProducts()
         .then(res => res.json())
-        .then(data => setItems(categoryId ? data.filter(item => item.category === categoryId) : data))
+        .then(res => setItems(category ? res.filter(item => item.category === category) : res))
         .catch(err => console.error(err))
         .finally(() => setIsLoading(false))
-    }, [categoryId]);
+    }, [category]);
 
     return (
         <div className="wrapper">

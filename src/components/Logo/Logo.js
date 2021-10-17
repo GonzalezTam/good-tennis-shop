@@ -1,6 +1,6 @@
 const Logo = () => {
     return(
-        <img alt="logo" src="../logo/goodTennisShop.png"/>
+        <img className="logo" alt="logo" src="../logo/goodTennisShop.png"/>
     )
 }
 

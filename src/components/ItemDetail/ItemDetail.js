@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ItemCount  from '../ItemCount/ItemCount';
 import {Col, Row} from 'react-bootstrap';
-import './itemDetail.css';
+import './ItemDetail.css';
 
 const ItemDetail = ({image, title, price, description, stock, brand}) => {
     return (

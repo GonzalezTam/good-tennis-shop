@@ -8,11 +8,18 @@ const ItemDetailContainer = () => {
     const [isLoading, setIsLoading] = useState(false)
     const { id } = useParams();
 
+    const getProducts = () =>{
+        return new Promise ((resolve,reject) => {
+            setTimeout(()=> {resolve (fetch('../data.json'))},500)
+        })
+    }
+
     useEffect(() => {
         setIsLoading(true)
-        fetch('../data.json')
+        getProducts()
         .then(res => res.json())
-        .then(data => setData(data[id - 1]))
+        // .then(res => setData(res[id - 1]))
+        .then(res => setData(res.find(item => item.id === Number(id))))
         .catch(err => console.log(err))
         .finally(() => setIsLoading(false))
     }, [id]);

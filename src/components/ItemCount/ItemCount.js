@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import { FaCartPlus } from 'react-icons/fa';
 import { BiMinus, BiPlus } from 'react-icons/bi';
-import './itemCount.css'
+import './ItemCount.css'
 
     const ItemCount = ({ initial, stock }) => {
     const [counter, setCounter] = useState(Number(initial));

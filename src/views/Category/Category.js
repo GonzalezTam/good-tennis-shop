@@ -3,14 +3,14 @@ import ItemListContainer from '../../components/ItemListContainer/ItemListContai
 import { useParams } from 'react-router'
 
 function Category() {
-    const {categoryId} = useParams()
-    console.log(categoryId)
+    const {category} = useParams()
+    // console.log(category)
 
     function capitalize(word) {
     return word[0].toUpperCase() + word.slice(1);
     }
 
-    const categoryUpper = capitalize(categoryId);
+    const categoryUpper = capitalize(category);
 
 
     return (
