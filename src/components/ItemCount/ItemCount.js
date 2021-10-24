@@ -4,7 +4,7 @@ import { FaCartPlus } from 'react-icons/fa';
 import { BiMinus, BiPlus } from 'react-icons/bi';
 import './ItemCount.css'
 
-    const ItemCount = ({ initial, stock }) => {
+    const ItemCount = ({ initial, stock, onAdd}) => {
     const [counter, setCounter] = useState(Number(initial));
 
 
@@ -16,9 +16,9 @@ import './ItemCount.css'
         counter > 1 && setCounter(counter - 1)
     };
 
-    const onAdd = (counter) =>{
-        console.log(`Client has selected ${counter} unit(s) of this item.`)
-    }
+    // const onAdd = (counter) =>{
+    //     console.log(`Client has selected ${counter} unit(s) of this item.`)
+    // }
 
     const addToCart = () => {
         counter > 0 && counter <= Number(stock) && onAdd(counter)

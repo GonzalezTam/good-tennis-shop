@@ -4,7 +4,7 @@ import '../NavBar/NavBar.css';
 
 const CartWidget = () => {
     return (
-        <li><Link to="#" className="cart-icon">Buy <CgShoppingCart/></Link></li>
+        <li><Link to="/cart" className="cart-icon">Buy <CgShoppingCart/></Link></li>
     );
 }
 

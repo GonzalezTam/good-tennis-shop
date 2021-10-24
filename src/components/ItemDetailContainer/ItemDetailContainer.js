@@ -27,7 +27,7 @@ const ItemDetailContainer = () => {
     return (
         <div className="wrapper">
             <div className="container">
-                {isLoading ? <Loader /> : <ItemDetail image={data.thumbnail} title={data.title} price={data.price} description={data.description} stock={data.stock} />}
+                {isLoading ? <Loader /> : <ItemDetail data={data} />}
             </div>
         </div>
     )
