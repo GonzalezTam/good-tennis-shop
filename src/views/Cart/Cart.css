@@ -1,0 +1,33 @@
+.cart-banner{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2em;
+        padding: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cart-container{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.product-row{
+    margin-bottom: 40px;
+}
+
+.subtotal-container{
+        text-align: right;
+        padding: 20px;
+        margin: 120px 0px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cart-image{
+    width: 25%;
+}
+
+.to-home{
+    margin-top: 130px;
+    margin-bottom: 130px;
+    color: #c23b46;
+}

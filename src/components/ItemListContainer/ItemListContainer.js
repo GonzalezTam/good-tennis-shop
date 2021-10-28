@@ -6,8 +6,7 @@ import Loader from '../Loader/Loader';
 const ItemListContainer = () => {
     const [items,setItems] = useState([]);
     const [isLoading, setIsLoading] = useState(false)
-    const { category } = useParams()
-    const { brand } = useParams()
+    const { category } = useParams();
 
     const getProducts = () =>{
         return new Promise ((resolve,reject) => {
@@ -23,15 +22,6 @@ const ItemListContainer = () => {
         .catch(err => console.error(err))
         .finally(() => setIsLoading(false))
     }, [category]);
-
-    useEffect(() => {
-        setIsLoading(true)
-        getProducts()
-        .then(res => res.json())
-        .then(res => setItems(brand ? res.filter(item => item.brand === brand) : res))
-        .catch(err => console.error(err))
-        .finally(() => setIsLoading(false))
-    }, [brand]);
 
     return (
         <div className="wrapper">

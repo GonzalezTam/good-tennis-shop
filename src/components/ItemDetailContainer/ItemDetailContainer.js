@@ -10,7 +10,7 @@ const ItemDetailContainer = () => {
 
     const getProducts = () =>{
         return new Promise ((resolve,reject) => {
-            setTimeout(()=> {resolve (fetch('../data.json'))},500)
+            setTimeout(()=> {resolve (fetch('../data.json'))},1000)
         })
     }
 

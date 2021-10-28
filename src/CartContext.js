@@ -15,7 +15,8 @@ export const CartProvider = (props) => {
       thumbnail: data.thumbnail,
       price: data.price,
       amount: amount,
-      stock: data.stock
+      stock: data.stock,
+      id: data.id
     }
 
     const temp = cart;
@@ -52,7 +53,7 @@ export const CartProvider = (props) => {
     console.log("Go to payments!")
   }
 
-  const valor_del_contexto = {
+  const context_value = {
     cart,
     addProduct,
     removeProduct,
@@ -64,7 +65,7 @@ export const CartProvider = (props) => {
 
 
   return (
-    <CartContext.Provider value={valor_del_contexto}>
+    <CartContext.Provider value={context_value}>
       {props.children}
     </CartContext.Provider>
   )
