@@ -39,10 +39,15 @@ nav a:hover{
     display: flex;
 }
 
-.cart-icon{
+.cart-link{
     text-align: end;
     color: #88C23F !important;
 }
+
+.cart-icon{
+    margin-bottom: 1px;
+}
+
 
 @media (max-width: 750px) {
     nav {

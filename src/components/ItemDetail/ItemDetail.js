@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useContext } from "react";
-import { CartContext } from '../../CartContext'
+import { CartContext } from '../../context/CartContext';
 import ItemCount  from '../ItemCount/ItemCount';
 import {Col, Row} from 'react-bootstrap';
 import './ItemDetail.css';
 
 function ItemDetail ({data}) {
-    const {addProduct} = useContext(CartContext)
+    const {addProduct, isInCart} = useContext(CartContext)
     const onAdd = (amount) => {
         addProduct(data,amount)
     }
@@ -24,7 +24,10 @@ function ItemDetail ({data}) {
                 <br />
                 <Link to={'#'}>
                     <Row className="justify-content-center">
-                        <ItemCount onAdd={onAdd} stock={data.stock} initial="1"/>
+                        {isInCart(data.id)
+                        ? <Link to="/cart" className="btn btn-info view-cart">View Cart</Link>
+                        : <ItemCount onAdd={onAdd} stock={data.stock} initial="1"/>
+                        }
                     </Row>
                 </Link>
                 <hr/>

@@ -7,7 +7,6 @@ import './ItemCount.css'
     const ItemCount = ({ initial, stock, onAdd}) => {
     const [counter, setCounter] = useState(Number(initial));
 
-
     const addToCounter = () => {
         counter < Number(stock) && setCounter(counter + 1)
     };
@@ -16,15 +15,10 @@ import './ItemCount.css'
         counter > 1 && setCounter(counter - 1)
     };
 
-    // const onAdd = (counter) =>{
-    //     console.log(`Client has selected ${counter} unit(s) of this item.`)
-    // }
-
     const addToCart = () => {
         counter > 0 && counter <= Number(stock) && onAdd(counter)
     }
 
-    //  STOCK being 0, counter remains 0, and 'Add to cart' button does nothing.
     useEffect(() => {
         Number(stock) > 0 ? setCounter(Number(initial)) : setCounter(0);
     }, [stock, initial]);
