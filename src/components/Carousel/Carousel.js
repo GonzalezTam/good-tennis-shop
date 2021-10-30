@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 const BrandCarousel = (props) => {
     const location = useLocation();
     // console.log(location.pathname);
-    if (location.pathname === '/cart') {
+    if (location.pathname === '/cart' || location.pathname === '/cart/confirmation') {
         return null;
     } else {
         return (

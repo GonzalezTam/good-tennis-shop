@@ -1,0 +1,12 @@
+.order-inputs{
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.email{
+    font-size: 17px;
+}
+
+.invalid-input{
+    border: 1px solid red;
+}

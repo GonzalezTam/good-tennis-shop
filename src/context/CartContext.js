@@ -1,4 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
+import firebase from "firebase";
+import { getFirestore } from  "../firebase/config";
 
 const init = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -7,25 +9,21 @@ export const CartContext = createContext();
 export const CartProvider = (props) => {
   const [cart, setCart] = useState((init));
   const [total, setTotal] = useState(0);
+  const [confirmText, setConfirmText] = useState('');
 
-  // console.log(cart);
-
-  const addProduct = (data, amount) => {
+  const addProduct = (item, amount) => {
     console.log("Added to cart!")
 
     const product = {
-      title: data.title,
-      thumbnail: data.thumbnail,
-      price: data.price,
+      title: item.title,
+      thumbnail: item.thumbnail,
+      price: item.price,
       amount: amount,
-      stock: data.stock,
-      id: data.id
+      stock: item.stock,
+      id: item.id
     }
 
     setCart([...cart, product]);
-    // const temp = cart;
-    // temp.push(product);
-    // setCart(temp);
   }
 
   const removeProduct = (index) => {
@@ -58,8 +56,31 @@ export const CartProvider = (props) => {
     setTotal(totalFixed);
   }
 
-  const verify = () => {
-    console.log("Go to payments!")
+  const saveOrder = (buyer) => {
+    console.log("Saving order!")
+
+    const order = {
+        buyer: buyer,
+        items: cart,
+        date: firebase.firestore.Timestamp.now(),
+        total: total
+    }
+
+    const db = getFirestore();
+    const collection = db.collection('orders');
+    const query = collection.add(order);
+
+    query
+      .then((result) => {
+        setConfirmText(`Great! Your order has been processed! Save this confirmation id: ${result.id}`);
+      })
+      .catch((err) => {
+        setConfirmText(`Sorry, we couldnt process your order. Error: ${err}`);
+      })
+  }
+
+  const clearConfirmText = () => {
+    setConfirmText('');
   }
 
   const context_value = {
@@ -71,7 +92,9 @@ export const CartProvider = (props) => {
     isInCart,
     getTotal,
     total,
-    verify
+    clearConfirmText,
+    confirmText,
+    saveOrder
   }
 
   useEffect(() => {

@@ -3,10 +3,11 @@ import { CartContext } from '../../context/CartContext'
 import { Link } from 'react-router-dom';
 import { Button, Row, Col, Container } from 'react-bootstrap';
 import { BsTrash } from 'react-icons/bs';
+import OrderForm from '../../components/OrderForm/OrderForm';
 import './Cart.css'
 
 const Cart = () => {
-    const {cart, removeProduct, clear, getTotal, total, verify} = useContext(CartContext);
+    const {cart, removeProduct, clear, getTotal, total, saveOrder} = useContext(CartContext);
 
     const pxq = (price, quantity) => {
         const calculate = price * quantity;
@@ -42,20 +43,22 @@ const Cart = () => {
                             )
                         })}
                 <hr></hr>
+                <Row className="text-end clean-cart">
+                        <Col className="text-right">
+                            <Button variant="danger" className="m-1" onClick={clear}>Clean cart</Button>
+                        </Col>
+                </Row>
                 </Container>
 
-                <Container className="subtotal-container">
-                    <div className="m-auto">
+                <Row className="subtotal-container m-0">
+                    <Col className="m-auto col-4 text-center">
                         <h3>Total</h3>
                         <p>${total}</p>
-                    </div>
-                    <div className="">
-                        <Button variant="danger" className="m-1" onClick={clear}>Clean cart</Button>
-                        <Link to={``}>
-                            <Button variant="success" className="btn-primary m-1" onClick={verify}>Checkout</Button>
-                        </Link>
-                    </div>
-                </Container>
+                    </Col>
+                    <Col className="m-auto col-8">
+                        <OrderForm saveOrder={saveOrder}/>
+                    </Col>
+                </Row>
                 </>
             }
         </div>

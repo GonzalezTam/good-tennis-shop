@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ItemList from "../ItemList/ItemList";
+import { getFirestore } from './../../firebase/config'
 import { useParams } from 'react-router-dom';
 import Loader from '../Loader/Loader';
 
@@ -8,25 +9,29 @@ const ItemListContainer = () => {
     const [isLoading, setIsLoading] = useState(false)
     const { category } = useParams();
 
-    const getProducts = () =>{
-        return new Promise ((resolve,reject) => {
-            setTimeout(()=> {resolve (fetch('../data.json'))},500)
-        })
-    }
-
     useEffect(() => {
         setIsLoading(true)
-        getProducts()
-        .then(res => res.json())
-        .then(res => setItems(category ? res.filter(item => item.category === category) : res))
-        .catch(err => console.error(err))
-        .finally(() => setIsLoading(false))
-    }, [category]);
+
+        const db = getFirestore();
+        const products = category
+                            ? db.collection('products').where('category', '==', category)
+                            : db.collection('products').orderBy('index', 'asc');
+
+        products.get()
+            .then((response) => {
+                const items = response.docs.map((doc) => {
+                    return {id: doc.id, ...doc.data()}
+                })
+                setItems(items)
+            })
+            .catch((error) => console.log(error))
+            .finally(() => setIsLoading(false))}
+    , [category])
 
     return (
         <div className="wrapper">
             <div className="container">
-                {isLoading ? <Loader /> : <ItemList items={items}/>}
+                {isLoading ? <Loader /> : <ItemList items={items} />}
             </div>
         </div>
     )

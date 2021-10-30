@@ -1,0 +1,14 @@
+.confirmation-banner{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.confirmation-text{
+    padding: 20px;
+    color: grey;
+}

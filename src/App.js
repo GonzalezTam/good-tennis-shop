@@ -9,6 +9,7 @@ import Category from './views/Category/Category';
 import Detail from './views/Detail/Detail';
 import Cart from './views/Cart/Cart';
 import { CartProvider } from './context/CartContext';
+import Confirmation from "./views/Confirmation/Confirmation";
 
 const App = () => {
     return (
@@ -23,6 +24,7 @@ const App = () => {
                         <Route exact path="/category/:category" component={Category}/>
                         <Route exact path="/item/:id" component={Detail}/>
                         <Route exact path="/cart" component={Cart}/>
+                        <Route exact path="/cart/confirmation" component={Confirmation}/>
                         <Route path="*"><Redirect to="/"/></Route>
                     </Switch>
                 </Container>

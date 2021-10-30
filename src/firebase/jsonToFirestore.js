@@ -1,9 +1,25 @@
-[
+const firebase = require("firebase");
+
+require("firebase/firestore");
+
+//inicializamos la app con nuestras credenciales
+firebase.initializeApp({
+    apiKey: "AIzaSyB6ZsuwGRWoFrHoIIHc8h7qZY1wuLwqhN8",
+    authDomain: "the-good-tennis.firebaseapp.com",
+    projectId: "the-good-tennis",
+    storageBucket: "the-good-tennis.appspot.com",
+    messagingSenderId: "667227144431",
+    appId: "1:667227144431:web:0bc446c95435f004fc1b1a"
+});
+
+var db = firebase.firestore();
+
+const PRODUCTS = [
 	{
 		"title": "Babolat Pure Aero",
 		"price": 229,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=BPAR-1.jpg&nw=540",
-		"id": 1,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1Ke-Py_J_74mgfJZZvCBJ-uizi_IAfkiT",
+		"index": 1,
 		"stock": 10,
 		"category": "racquets",
 		"brand":"Babolat",
@@ -12,8 +28,8 @@
 	{
 		"title": "Babolat Pure Drive 2021",
 		"price": 229,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=BRPDR-1.jpg&nw=540",
-		"id": 2,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1QiX0VeuGzWU-4OH75jyDmunQ1DDrgKbA",
+		"index": 2,
 		"stock": 7,
 		"category": "racquets",
 		"brand":"Babolat",
@@ -22,8 +38,8 @@
 	{
 		"title": "Babolat Pure Strike 16x19 3rd Gen",
 		"price": 219,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=PS1619-1.jpg&nw=540",
-		"id": 3,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1Skzb4S-jKvVX7vyAJ7rhdhKMJxVRGgav",
+		"index": 3,
 		"stock": 3,
 		"category": "racquets",
 		"brand":"Babolat",
@@ -32,8 +48,8 @@
 	{
 		"title": "Wilson Blade 98 16x19 v7",
 		"price": 199,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=WB98R-1.jpg&nw=540",
-		"id": 4,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1oMd_r6Kr2xS0XHCOEcsmH7zyHXxoeE7x",
+		"index": 4,
 		"stock": 5,
 		"category": "racquets",
 		"brand":"Wilson",
@@ -42,8 +58,8 @@
 	{
 		"title": "Wilson Pro Staff RF97 v13",
 		"price": 279,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=97V13R-1.jpg&nw=540",
-		"id": 5,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1OiHez4DKOcNwf_GSpQHBxGdgByFCupRQ",
+		"index": 5,
 		"stock": 2,
 		"brand": "Wilson",
 		"category": "racquets",
@@ -52,8 +68,8 @@
 	{
 		"title": "Wilson Ultra 100 v3",
 		"price": 229,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=U1003-1.jpg&nw=540",
-		"id": 6,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1ant2Vo5HpU5Kryqp8EL_Ta6Ep1vbAWTu",
+		"index": 6,
 		"stock": 7,
 		"category": "racquets",
 		"brand":"Wilson",
@@ -62,8 +78,8 @@
 	{
 		"title": "Head Graphene 360+ Speed Pro",
 		"price": 249,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=HRSPB-1.jpg&nw=540",
-		"id": 7,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=14mslD7crDLM1hqBoTDc2k-f__2rmrSGm",
+		"index": 7,
 		"stock": 5,
 		"category": "racquets",
 		"brand": "Head",
@@ -72,8 +88,8 @@
 	{
 		"title": "Head Radical Pro 2021",
 		"price": 249,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=HRRP-1.jpg&nw=540",
-		"id": 8,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=12Tl1BZ3V_-cNPHI1wiRzygnDcRImnIGF",
+		"index": 8,
 		"stock": 2,
 		"category": "racquets",
 		"brand":"Head",
@@ -82,8 +98,8 @@
 	{
 		"title": "Head Graphene 360+ Prestige Pro",
 		"price": 199,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=HPREPR-1.jpg&nw=540",
-		"id": 9,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1TNtnNyEmLZYTrNy1R47w0ZYkxqguM1Lf",
+		"index": 9,
 		"stock": 3,
 		"category": "racquets",
 		"brand": "Head",
@@ -92,8 +108,8 @@
 	{
 		"title": "Yonex VCORE PRO 97H 330 (2021)",
 		"price": 249,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=330VD7-1.jpg&nw=540",
-		"id": 10,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1h69YJIR9ZbwwM-31YyqMfNBBE5UBBftj",
+		"index": 10,
 		"stock": 7,
 		"category": "racquets",
 		"brand": "Yonex",
@@ -102,8 +118,8 @@
 	{
 		"title": "Yonex EZONE 98 Naomi Osaka LE",
 		"price": 239,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=YE98NO-1.jpg&nw=540",
-		"id": 11,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1fBJLoSRBuckmHJ2b5kJ57O07WPAvGtr4",
+		"index": 11,
 		"stock": 1,
 		"category": "racquets",
 		"brand": "Yonex",
@@ -112,8 +128,8 @@
 	{
 		"title": "Yonex VCORE 95",
 		"price": 239,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=YVCR95-1.jpg&nw=540",
-		"id": 12,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1TgelVo620BhGRBfeSpx4nKNhigVagAIl",
+		"index": 12,
 		"stock": 8,
 		"category": "racquets",
 		"brand": "Yonex",
@@ -122,8 +138,8 @@
 	{
 		"title": "Tecnifibre TFight 305 RS",
 		"price": 229.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=TRTFIR-1.jpg&nw=540",
-		"id": 13,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1CmqADkB2pXLKkKpVXqz4_UzOHH5HLepM",
+		"index": 13,
 		"stock": 3,
 		"category": "racquets",
 		"brand": "Tecnifibre",
@@ -132,8 +148,8 @@
 	{
 		"title": "Tecnifibre TF-X1 300",
 		"price": 219.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=TFX130-1.jpg&nw=540",
-		"id": 14,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=157-JNN7rgy60oef7qKo_qFkZ712_CYNO",
+		"index": 14,
 		"stock": 9,
 		"category": "racquets",
 		"brand": "Yonex",
@@ -142,8 +158,8 @@
 	{
 		"title": "Tecnifibre TRebound 298 Iga",
 		"price": 209.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=TREBIG-1.jpg&nw=540",
-		"id": 15,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=18kstM74LrrZ3Z_RmxVAhHTceDnZJmGwJ",
+		"index": 15,
 		"stock": 3,
 		"category": "racquets",
 		"brand": "Tecnifibre",
@@ -152,8 +168,8 @@
 	{
 		"title": "Asics Gel Challenger 13 White/Black Men's Shoes",
 		"price": 94.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=AMCH3WB-1.jpg&nw=540",
-		"id": 16,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1OimR-VJdMmdZa8n-QA68I_Z8aMP-A0kW",
+		"index": 16,
 		"stock": 3,
 		"category": "shoes",
 		"brand": "Asics",
@@ -162,8 +178,8 @@
 	{
 		"title": "Asics Gel Resolution 8 Black/Gecko Green Men's Shoes",
 		"price": 134.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=AMGR8BG-1.jpg&nw=540",
-		"id": 17,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1ByiDPqGZ_BzM2zOyDDe9wQQJeoauSPIv",
+		"index": 17,
 		"stock": 6,
 		"category": "shoes",
 		"brand": "Asics",
@@ -172,8 +188,8 @@
 	{
 		"title": "Asics Solution Speed FF 2 White/Classic Red Men's Shoes",
 		"price": 124.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=AMSSFWC-2.jpg&nw=540",
-		"id": 18,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1F-UtbMhUlNb2Me9X_LjP-WhxFYzf8wet",
+		"index": 18,
 		"stock": 2,
 		"category": "shoes",
 		"brand": "Asics",
@@ -182,8 +198,8 @@
 	{
 		"title": "Nike Air Zoom Vapor Pro White/Black Men's Shoe",
 		"price": 120,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=NMVPWB-1.jpg&nw=540",
-		"id": 19,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1Kni0w_8tuG-SPOYPFd7zNxb-1YOkJuC4",
+		"index": 19,
 		"stock": 1,
 		"category": "shoes",
 		"brand": "Nike",
@@ -192,8 +208,8 @@
 	{
 		"title": "Nike Air Zoom Vapor Pro Dark Teal/Green Men's Shoe",
 		"price": 104.94,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=NMVPTG-1.jpg&nw=540",
-		"id": 20,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1L0smth6YAdSKyjCPrjLzyy9uPAmuZfZT",
+		"index": 20,
 		"stock": 4,
 		"category": "shoes",
 		"brand": "Nike",
@@ -202,8 +218,8 @@
 	{
 		"title": "Babolat Jet Mach II Clay White/Navy/Orange Men's Shoes",
 		"price": 140,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=BMJM2CW-1.jpg&nw=540",
-		"id": 21,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1fTNw2TKjqeEtRC5V6s_79vLTfGtnvjsZ",
+		"index": 21,
 		"stock": 3,
 		"category": "shoes",
 		"brand": "Babolat",
@@ -212,8 +228,8 @@
 	{
 		"title": "Babolat Jet Mach III AC Green/Purple Men's Shoes",
 		"price": 130,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=BMJM3GP-1.jpg&nw=540",
-		"id": 22,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1pq1rXkT1BOT13jUOSk18eVXs-H1wBQm4",
+		"index": 22,
 		"stock": 1,
 		"category": "shoes",
 		"brand": "Babolat",
@@ -222,8 +238,8 @@
 	{
 		"title": "Wilson Kaos Mirage White/Yellow Men's Shoe",
 		"price": 169,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=WMKMWY-1.jpg&nw=540",
-		"id": 23,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1z5HIJ8By9TX_dfEBCYSIwLSBC6rd2kBP",
+		"index": 23,
 		"stock": 4,
 		"category": "shoes",
 		"brand": "Wilson",
@@ -232,8 +248,8 @@
 	{
 		"title": "Wilson Rush Pro 3.5 Blue Men's Shoe",
 		"price": 135,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=WMR35B-1.jpg&nw=540",
-		"id": 24,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1pwJucLOIGR8n_T1lTcCh302YbegFKcBg",
+		"index": 24,
 		"stock": 3,
 		"category": "shoes",
 		"brand": "Wilson",
@@ -242,8 +258,8 @@
 	{
 		"title": "Wilson Kaos Swift Black/Orange/White Men's Shoe",
 		"price": 129,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=WMKSBOW-1.jpg&nw=540",
-		"id": 25,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=13p8sThC5Ow21dozboSnDkj-mWwaxOgrB",
+		"index": 25,
 		"stock": 1,
 		"category": "shoes",
 		"brand": "Wilson",
@@ -252,8 +268,8 @@
 	{
 		"title": "Lacoste AG-LT 21 White/Green Men's Shoes",
 		"price": 119.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=LMAGWHG-1.jpg&nw=540",
-		"id": 26,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=14Rf5gVKFyERaXMLXSV9_Qiz0U480gwqk",
+		"index": 26,
 		"stock": 7,
 		"category": "shoes",
 		"brand": "Lacoste",
@@ -262,8 +278,8 @@
 	{
 		"title": "Lacoste AG-LT 21 Ultra Black/Yellow Men's Shoes",
 		"price": 174.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=LMAGLBY-1.jpg&nw=540",
-		"id": 27,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1PDD5dSesqNyNFCV_hXLSuWXCykNKYFn5",
+		"index": 27,
 		"stock": 0,
 		"category": "shoes",
 		"brand": "Lacoste",
@@ -272,8 +288,8 @@
 	{
 		"title": "Luxilon ALU Power 16/1.30 String Reel",
 		"price": 301.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=LUXAL16SR-1.jpg&nw=540",
-		"id": 28,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1B8uMgux6jPPEHW-nUsYjEgWeL5ayVoG0",
+		"index": 28,
 		"stock": 4,
 		"category": "strings",
 		"brand": "Luxilon",
@@ -282,8 +298,8 @@
 	{
 		"title": "Babolat RPM Blast 16/1.30 String Reel",
 		"price": 244.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=BRPMB16R-1.jpg&nw=540",
-		"id": 29,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=198hqXNhhxKEo8ww-CDyOCn0Y-l-i0c_B",
+		"index": 29,
 		"stock": 2,
 		"category": "strings",
 		"brand": "Babolat",
@@ -292,8 +308,8 @@
 	{
 		"title": "Babolat Xcel 16/1.30 String Reel Blue",
 		"price": 282.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=BXCS16BR-1.jpg&nw=540",
-		"id": 30,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1Zi754FYep2ZT3DM86kjcBtjfndi9gSiE",
+		"index": 30,
 		"stock": 5,
 		"category": "strings",
 		"brand": "Babolat",
@@ -302,8 +318,8 @@
 	{
 		"title": "Solinco Hyper-G 16/1.30 String Reel",
 		"price": 159.99,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=SHG16R-1.jpg&nw=540",
-		"id": 31,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1QoIuypLYAT0FNY3SPSujBFxQVIsKWY08",
+		"index": 31,
 		"stock": 6,
 		"category": "strings",
 		"brand": "Solinco",
@@ -312,8 +328,8 @@
 	{
 		"title": "Solinco Tour Bite 16/1.30 String Reel",
 		"price": 159.99,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=STB16R-1.jpg&nw=540",
-		"id": 32,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1mqi36pIrONp0lB9ou38mtkm6_sHNZAlb",
+		"index": 32,
 		"stock": 2,
 		"category": "strings",
 		"brand": "Solinco",
@@ -322,8 +338,8 @@
 	{
 		"title": "Solinco Outlast 16/1.30 String Reel",
 		"price": 115,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=SOUT16R-1.jpg&nw=540",
-		"id": 33,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1BW38pfQ6l2IOg1uFB73Wdp94Brafi2VU",
+		"index": 33,
 		"stock": 1,
 		"category": "strings",
 		"brand": "Solinco",
@@ -332,8 +348,8 @@
 	{
 		"title": "Kirschbaum Pro Line II 16/1.30 String Reel",
 		"price": 34,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=PL2130RBK-1.jpg&nw=540",
-		"id": 34,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1iPeTSINMFBYgOHhZe9dq79x1UXtDSwfG",
+		"index": 34,
 		"stock": 6,
 		"category": "strings",
 		"brand": "Kirschbaum",
@@ -342,8 +358,8 @@
 	{
 		"title": "Kirschbaum Pro Line II Rough 16/1.30 String Reel",
 		"price": 85,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=PL2R130RBK-1.jpg&nw=540",
-		"id": 35,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1dQe5PigRTXf8NOgkUYB5dssqrUG6Belb",
+		"index": 35,
 		"stock": 8,
 		"category": "strings",
 		"brand": "Kirschbaum",
@@ -352,8 +368,8 @@
 	{
 		"title": "Kirschbaum Spiky Black Shark 16/1.30 String Reel",
 		"price": 89,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=SHARK16RB-1.jpg&nw=540",
-		"id": 36,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1-1r2KaAZyymZRSWJPITcxgSw4d7tqHq9",
+		"index": 36,
 		"stock": 3,
 		"category": "strings",
 		"brand": "Kirschbaum",
@@ -362,8 +378,8 @@
 	{
 		"title": "Babolat Gold Championship Ball 24 Can Case",
 		"price": 59.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=BGCBC-1.jpg&nw=540",
-		"id": 37,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=103yLP_kIl5KDNBMLXX4GppC0NVPFgijq",
+		"index": 37,
 		"stock": 6,
 		"category": "balls",
 		"brand": "Babolat",
@@ -372,8 +388,8 @@
 	{
 		"title": "Wilson US Open XD Tennis Ball 3-Ball 24 Can Case",
 		"price": 99.9,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=USOC-1.jpg&nw=540",
-		"id": 38,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1nTAIpUq-hmM4AMLcSB2OMDPf-0Q0GpWP",
+		"index": 38,
 		"stock": 4,
 		"category": "balls",
 		"brand": "Wilson",
@@ -382,8 +398,8 @@
 	{
 		"title": "Wilson Triniti All Court Tennis Ball 24 Can Case",
 		"price": 109.99,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=WTRINBC-1.jpg&nw=540",
-		"id": 39,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1GO6U1BTeAyU9a95Jj8xDXUB0bVux8HQN",
+		"index": 39,
 		"stock": 5,
 		"category": "balls",
 		"brand": "Wilson",
@@ -392,8 +408,8 @@
 	{
 		"title": "Dunlop Australian Open XD Tennis Ball 24 Can Case",
 		"price": 89.9,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=DPAOBALLC-1.jpg&nw=540",
-		"id": 40,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1gk8SsyPOpIt4c1u6c4o61MzgUuc4zeBy",
+		"index": 40,
 		"stock": 9,
 		"category": "balls",
 		"brand": "Dunlop",
@@ -402,8 +418,8 @@
 	{
 		"title": "Penn Tour Extra Duty Tennis Balls 24 Can Case",
 		"price": 79.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=TOUXDC-1.jpg&nw=540",
-		"id": 41,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=16t0b_rGoVL3jGiSdmdaHSQB7NQ1-x6YV",
+		"index": 41,
 		"stock": 0,
 		"category": "balls",
 		"brand": "Penn",
@@ -412,11 +428,29 @@
 	{
 		"title": "Pro Penn Marathon Regular Duty Tennis Balls 24 Can Case",
 		"price": 89.95,
-		"thumbnail": "https://img.tennis-warehouse.com/watermark/rs.php?path=PPMRD-1.jpg&nw=540",
-		"id": 42,
+		"thumbnail": "http://drive.google.com/uc?export=view&id=1AY3W89mnC2iAExS9AkpED12JUNkGHmGo",
+		"index": 42,
 		"stock": 5,
 		"category": "balls",
 		"brand": "Penn",
 		"description": "Penn's longest lasting tennis ball, the Pro Penn Marathon is the #1 choice among USPTA Teaching Professionals. These feature Penn's Encore technology for more longevity in the core and LongPlay felt for better durability. Optik felt keeps visibility at a maximum. These particular Pro Penn Marathon balls are made of regular duty felt, ideal for soft courts such as: clay, grass, omni and carpet etc."
 	}
 ]
+
+PRODUCTS.forEach(function(product) {
+    db.collection("products").add({
+        index: product.index,
+        title: product.title,
+        description: product.description,
+        price: product.price,
+        category: product.category,
+        brand: product.brand,
+        stock: product.stock,
+        thumbnail: product.thumbnail
+    }).then(function(docRef) {
+        console.log("Document written with id: ", docRef.id);
+    })
+    .catch(function(error) {
+        console.error("Error adding document: ", error);
+    });
+});
