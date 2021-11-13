@@ -12,6 +12,5 @@ a, a:hover, a:visited{
 }
 
 .animate:hover {
-    /* transform: translateY(-20px); */
     transform: scale(1.05);
 }

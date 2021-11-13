@@ -51,11 +51,11 @@ const Cart = () => {
                 </Container>
 
                 <Row className="subtotal-container m-0">
-                    <Col className="m-auto col-4 text-center">
+                    <Col xs={12} md={4} lg={12} className="m-auto text-center mt-4 mb-4">
                         <h3>Total</h3>
                         <p>${total}</p>
                     </Col>
-                    <Col className="m-auto col-8">
+                    <Col xs={12} md={8} lg={12} className="m-auto mt-4 mb-4">
                         <OrderForm saveOrder={saveOrder}/>
                     </Col>
                 </Row>

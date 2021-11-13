@@ -6,14 +6,12 @@ const init = JSON.parse(localStorage.getItem("cart")) || [];
 
 export const CartContext = createContext();
 
-export const CartProvider = (props) => {
+const CartProvider = (props) => {
   const [cart, setCart] = useState((init));
   const [total, setTotal] = useState(0);
   const [confirmText, setConfirmText] = useState('');
 
   const addProduct = (item, amount) => {
-    console.log("Added to cart!")
-
     const product = {
       title: item.title,
       thumbnail: item.thumbnail,
@@ -27,7 +25,6 @@ export const CartProvider = (props) => {
   }
 
   const removeProduct = (index) => {
-    console.log("Removed from cart!")
 
     const temp = cart;
     temp.splice(index, 1);
@@ -40,7 +37,6 @@ export const CartProvider = (props) => {
   }
 
   const clear = () => {
-    console.log("Cart empty!")
     setCart([]);
     setTotal(0)
   }
@@ -57,8 +53,6 @@ export const CartProvider = (props) => {
   }
 
   const saveOrder = (buyer) => {
-    console.log("Saving order!")
-
     const order = {
         buyer: buyer,
         items: cart,
@@ -67,16 +61,15 @@ export const CartProvider = (props) => {
     }
 
     const db = getFirestore();
-    const collection = db.collection('orders');
-    const query = collection.add(order);
+    const orders = db.collection('orders');
 
-    query
-      .then((result) => {
-        setConfirmText(`Great! Your order has been processed! Save this confirmation id: ${result.id}`);
-      })
-      .catch((err) => {
-        setConfirmText(`Sorry, we couldnt process your order. Error: ${err}`);
-      })
+    orders.add(order)
+    .then((res) => {
+      setConfirmText(`Great! Your order has been processed! Save this confirmation id: ${res.id}`);
+    })
+    .catch((err) => {
+      setConfirmText(`Sorry, we couldnt process your order. Error: ${err}`);
+    })
   }
 
   const clearConfirmText = () => {
@@ -107,3 +100,5 @@ export const CartProvider = (props) => {
     </CartContext.Provider>
   )
 }
+
+export default CartProvider;

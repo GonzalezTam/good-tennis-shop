@@ -8,7 +8,7 @@ import Home from "./views/Home/Home";
 import Category from './views/Category/Category';
 import Detail from './views/Detail/Detail';
 import Cart from './views/Cart/Cart';
-import { CartProvider } from './context/CartContext';
+import CartProvider from './context/CartContext';
 import Confirmation from "./views/Confirmation/Confirmation";
 
 const App = () => {

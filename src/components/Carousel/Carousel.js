@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 
 const BrandCarousel = (props) => {
     const location = useLocation();
-    // console.log(location.pathname);
     if (location.pathname === '/cart' || location.pathname === '/cart/confirmation') {
         return null;
     } else {
@@ -14,42 +13,42 @@ const BrandCarousel = (props) => {
                     <Carousel.Item interval={1500}>
                             <img
                             className="d-block w-100"
-                            src="https://www.tennisplaza.com/company/default/assets/Image/new-footwear-rafa.png"
+                            src="http://drive.google.com/uc?export=view&id=19Zl8ZTOjLGpx-U4FRefsvZ1gkK1DjAUD"
                             alt="Nike slide"
                             />
                     </Carousel.Item>
                     <Carousel.Item interval={1500}>
                             <img
                             className="d-block w-100"
-                            src="https://uploads-ssl.webflow.com/5e5e560768d0a562f01cdf1e/6026832c04cd518da0da8570_210121_mainteaser_head_radical-03.jpg"
+                            src="http://drive.google.com/uc?export=view&id=1HrZAXYeBGYNEAvnViMk5N91zuQNw3fxj"
                             alt="Head slide"
                             />
                     </Carousel.Item>
                     <Carousel.Item interval={1500}>
                             <img
                             className="d-block w-100"
-                            src="https://www.tennis-point.es/on/demandware.static/-/Library-Sites-TennisPoint/es_ES/dw35fcbed2/webflow/16242/images/210729_mainteaser_asics_novak_pack-03.jpg"
+                            src="http://drive.google.com/uc?export=view&id=1MUNQNzUR-iAI-OPMZbkrLsrkJDnZ7Eu3"
                             alt="Asics slide"
                             />
                     </Carousel.Item>
                     <Carousel.Item interval={1500}>
                             <img
                             className="d-block w-100"
-                            src="https://www.tennis-point.es/on/demandware.static/-/Library-Sites-TennisPoint/es_ES/dwafb461af/webflow/16229/images/210915_mainteaser_fs_wilson_blade_launch.jpg"
+                            src="http://drive.google.com/uc?export=view&id=1LsXT1FkTAv7Qxt8nV8xLpvKSm5aTxOyH"
                             alt="Wilson slide"
                             />
                     </Carousel.Item>
                     <Carousel.Item interval={1500}>
                             <img
                             className="d-block w-100"
-                            src="https://www.tennis-point.es/on/demandware.static/-/Library-Sites-TennisPoint/es_ES/dw0df53303/webflow/16248/images/201007_mainteaser_lacoste_fo.jpg"
+                            src="http://drive.google.com/uc?export=view&id=1s2-AqZkNZ2mqV0i2ppDmQM8Vi5r7vcOq"
                             alt="Lacoste slide"
                             />
                     </Carousel.Item>
                     <Carousel.Item interval={1500}>
                             <img
                             className="d-block w-100"
-                            src="https://www.tennis-point.es/on/demandware.static/-/Library-Sites-TennisPoint/es_ES/dw6aa49ebf/webflow/16231/images/190810_racket_babolat_pure_strike_thiem.jpg"
+                            src="http://drive.google.com/uc?export=view&id=1AKr_6JLK0-cxWvRxNPIBTi81gIMyEKP5"
                             alt="Babolat slide"
                             />
                     </Carousel.Item>

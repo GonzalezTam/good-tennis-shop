@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import { CartContext } from '../../context/CartContext'
 import './OrderForm.css';
 
-function OrderForm({saveOrder}) {
+const OrderForm = ({saveOrder}) =>{
     let {confirmText, clearConfirmText} = useContext(CartContext);
 
     const [name, setName] = useState('');
@@ -46,25 +46,20 @@ function OrderForm({saveOrder}) {
 }
 
     return (
-        <div className="form">
-
+        <div className="form text-center">
             <h3 className="mb-4 ">Contact information:</h3>
-
             <div className="mb-4">
                 <label htmlFor="name">Name:</label>
                 <input className={nameError ? "invalid-input order-inputs" : "order-inputs"} type="text" name="name" id="name" placeholder="John Connor" onChange={ e => setName(e.target.value)} required maxLength="50"/>
             </div>
-
             <div className="mb-4">
                 <label htmlFor="email" className="email">Email:</label>
                 <input className={emailError ? "invalid-input order-inputs" : "order-inputs"} type="email" name="email" id="email" placeholder="abc@mail.com" onChange={ e => setEmail(e.target.value)} required maxLength="50"/>
             </div>
-
             <div className="mb-4">
                 <label htmlFor="phone">Phone:</label>
                 <input className={phoneError ? "invalid-input order-inputs" : "order-inputs"} type="text" name="phone" id="phone" placeholder="1234567890" onChange={ e => setPhone(e.target.value)}  required maxLength="15"/>
             </div>
-
             { confirmText === ''
                     ?
                     <Button variant="success" className="btn-primary m-1" onClick={validateAndSaveOrder}>Order now ✅</Button>

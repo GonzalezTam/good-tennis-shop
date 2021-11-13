@@ -24,7 +24,6 @@ const ItemListContainer = () => {
                 })
                 setItems(items)
             })
-            .catch((error) => console.log(error))
             .finally(() => setIsLoading(false))}
     , [category])
 

@@ -2,15 +2,15 @@
 
 GoodTennisShop is as a full Tennis specialty retailer, offering a world-class selection of brand-named tennis equipment for all kind of players.
 
-## Getting Started
+# Getting Started
 
 Follow these simple steps to run the project locally:
 
-### Prerequisites
+## Prerequisites
 
 - [Node.js](https://nodejs.org/en/) (latest)
 
-### Installation
+## Installation
 
 1. Fork and clone this repository
 
@@ -29,6 +29,21 @@ Follow these simple steps to run the project locally:
 
     Project starts running at http://localhost:3000
 
-### Autor
+
+# Dependencies
+- React
+- React DOM
+- React Router DOM
+- React-icons
+- Bootstrap
+- Firebase
+
+# Demo
+
+![good-tennis-shop-demo-gif](good-tennis-shop-demo.gif)
+
+
+
+### Author
 
 Agustin Gonzalez Tamburrino - 2021

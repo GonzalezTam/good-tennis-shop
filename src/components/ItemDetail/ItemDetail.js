@@ -13,7 +13,6 @@ function ItemDetail ({item}) {
     }
 
     return (
-        <>
         <Row xs={1} md={2} lg={2} className="mb-5 mt-5">
             <Col className="m-auto text-center">
                 <img className="item-detail-img" src={item.thumbnail} alt={item.title} />
@@ -34,7 +33,6 @@ function ItemDetail ({item}) {
                 <p className="">{item.description}</p>
             </Col>
         </Row>
-        </>
     )
 }
 

@@ -18,12 +18,9 @@ const ItemDetailContainer = () => {
 
     query
         .then((doc)=> {
-            if (doc.exists) {
-            setItem({id: doc.id, ...doc.data()});
-            } else {
-            console.log('Your product does not exist!');
+            doc.exists && setItem({id: doc.id, ...doc.data()});
             }
-        })
+        )
         .finally(() => {
             setIsLoading(false);
             })
