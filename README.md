@@ -42,7 +42,7 @@ Follow these simple steps to run the project locally:
 
 ![good-tennis-shop-demo-gif](good-tennis-shop-demo.gif)
 
-
+https://good-tennis-shop.netlify.app
 
 ### Author
 
